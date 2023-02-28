@@ -1,0 +1,119 @@
+<div class="container-fluid">
+            <div class="justify-content-center pb-3">
+                <div
+                    class=" text-center d-flex flex-column justify-content-around align-content-around container-fluid">
+                    <h2 class="portfolio-t align-self-start">Latest &amp; </h2>
+                    <h2 class="portfolio-t align-self-end" style="font-family:'Poppins',sans-sefif;">Greatest</h2>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="container d-flex my-5 ml-5 flex-lg-row flex-column">
+                <div class="col-lg-5 height-portfolio"></div>
+                <div class="col-lg-7 d-flex  justify-content-center align-self-center text-start px-5">
+                    <div class="port-card animate__animated animate__fadeInUp">
+                        <div class="toggler">
+                            <span class="subheading">Web Design {12/06/2019}</span>
+                            <h2 class="mb-4" style="line-height:1.5;font-weight:400; font-size:80px;">Midway</h2>
+                        </div>
+                        <div class="ddd p" style="display:none;">
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                            <p><a href="#" class="">View Portfolio</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5 d-flex align-items-center row-gap-3">
+                <div class="col-lg-4">
+                    <div class="port-card text-start" style="position:absolute; left:15%;">
+                        <div class="toggler">
+                            <span class="subheading">Web Design {12/06/2019}</span>
+
+                            <h2 class="w-100" style="line-height:1.5;font-weight:400; font-size:80px;">Workplace Office
+                            </h2>
+
+                        </div>
+                        <div class="ddd animate__animated animate__fadeInUp w-50" style="display:none;">
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                            <p><a href="#" class="">View Portfolio</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 height-portfolio"></div>
+            </div>
+            <div class="my-5 d-flex align-items-center">
+                <div class="col-lg-8 height-portfolio"></div>
+                <div class="col-lg-4">
+                    <div class="port-card text-end" style="position:absolute; right:15%;">
+                        <div class="toggler">
+                            <span class="subheading">Web Design {12/06/2019}</span>
+
+                            <h2 class="w-100" style="line-height:1.5;font-weight:400; font-size:80px;">Workplace Office
+                            </h2>
+
+                        </div>
+                        <div class="ddd animate__animated animate__fadeInUp w-50 ms-auto" style="display:none;">
+                            <p class="">Far far away, behind the word mountains, far from the countries Vokalia and
+                                Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                            <p><a href="#" class="">View Portfolio</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5 container d-flex align-items-center">
+                <div class="col-lg-7">
+                    <div class="port-card">
+                        <div class="toggler">
+                            <span class="subheading">Web Design {12/06/2019}</span>
+                            <h2 class="mb-4" style="line-height:1.5;font-weight:400; font-size:80px;">Midway</h2>
+                        </div>
+                        <div class="ddd animate__animated animate__fadeInUp" style="display:none;">
+                            <p class=" w-50">Far far away, behind the word mountains, far from the countries Vokalia and
+                                Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                            <p><a href="#" class="">View Portfolio</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 height-portfolio"></div>
+            </div>
+
+        </div>
+        <div class="my-5 d-flex align-items-center">
+            <div class="col-lg-5">
+                <div class="port-card text-start" style="position:absolute; left:15%;">
+                    <div class="toggler">
+                        <span class="subheading">Web Design {12/06/2019}</span>
+
+                        <h2 class="w-100" style="line-height:1.5;font-weight:400; font-size:80px;">Workplace Office
+                        </h2>
+
+                    </div>
+                    <div class="ddd animate__animated animate__fadeInUp w-50" style="display:none;">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                        <p><a href="#" class="">View Portfolio</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 height-portfolio"></div>
+        </div>
+        <div class="d-flex my-5 container">
+            <div class="col-lg-5 height-portfolio" style=""></div>
+            <div class="col-lg-7 justify-content-center align-self-center text-start px-5">
+                <div class="port-card">
+                    <span class="subheading">Web Design {12/06/2019}</span>
+                    <h2 class="mb-4" style="line-height:1.5;font-weight:400; font-size:80px;">Midway</h2>
+                    <div class="ddd animate__animated animate__fadeInUp" style="display:none;">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                        <p><a href="#" class="">View Portfolio</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>

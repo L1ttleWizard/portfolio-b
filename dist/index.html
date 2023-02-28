@@ -6,14 +6,16 @@
     <meta http-equiv=X-UA-Compatible content="IE=edge">
     <meta name=viewport content="width=device-width,initial-scale=1">
     <title>Document</title>
-    <script defer=defer src=main.31d6cfe0d16ae931b73c.bundle.js></script>
-    <script defer=defer src=vendor.0c3bb29ffee0acf61c31.bundle.js></script>
-    <link href=main.7541a10ea0e174699060.css rel=stylesheet>
+    <script defer=defer src=main.3027049c9e553e53a8da.bundle.js></script>
+    <script defer=defer src=vendor.a372f5b85f6755ab5568.bundle.js></script>
+    <script defer=defer src=jquery.31d6cfe0d16ae931b73c.bundle.js></script>
+    <script defer=defer src=fontawesome.7ea08480f97c299301b9.bundle.js></script>
+    <link href=main.059f956294d1d1ebd5e6.css rel=stylesheet>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-transparent container-lg pt-lg-4">
-        <div class=container-fluid><a class="navbar-brand text-uppercase" href=#>Evans</a> <button
+    <nav class="navbar navbar-expand-lg navbar-dark z-3 pt-lg-4 w-100 bg-transparent" style=position:fixed;top:0>
+        <div class=container-lg><a class="navbar-brand text-uppercase" href=#>Evans</a> <button
                 class="navbar-toggler border-0" type=button data-bs-toggle=collapse data-bs-target=#navbarNav
                 aria-controls=navbarNav aria-expanded=false aria-label="Toggle navigation"><span
                     class=navbar-toggler-icon></span></button>
@@ -27,15 +29,88 @@
             </div>
         </div>
     </nav>
-    <section id=home-section>
-        <div id=carouselExampleSlidesOnly class="carousel slide" data-bs-ride=carousel>
-            <div class=carousel-inner>
-                <div class="carousel-item active">
-                    <div class="w-100 h-100" style="background-image:url('./img/bg_1.jpg')"></div>
+    <section id=home-section class="fullheight position-relative">
+        <div class=d-flex>
+            <div class="half w-50 fullheight">
+                <div class="big-text text-center">Evans</div>
+                <div id=carouselExampleSlidesOnly class="carousel slide" data-bs-ride=carousel>
+                    <div class=carousel-inner>
+                        <div class="carousel-item active">
+                            <div class="bg-1 fullheight d-block w-100"></div>
+                        </div>
+                        <div class=carousel-item>
+                            <div class="bg-2 fullheight d-block w-100"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class=carousel-item bg-1>
-                    <div style="background-image:url('./img/bg_2.jpg')"></div>
+            </div>
+            <div class="half w-50 bg-black"></div>
+        </div>
+    </section>
+    <section class="intro py-5 mb-5 container d-lg-flex justify-content-end">
+        <div class="h2 w-50 py-5 me-lg-5 pe-lg-5" style=font-size:60px>Web <span class=bg-warning>Designer</span>,
+            hobbyist writer, and the CEO &amp; Founder of <span class=bg-warning>Evans</span></div>
+    </section>
+    <section class="services py-5">
+        <div class=container-lg>
+            <div class="container-lg px-lg-5 px-3 mx-lg-5 row">
+                <div class="d-flex flex-column text-start p-4 row-gap-3 col-lg hovered"><i
+                        class="fa-solid fa-layer-group fa-4x"></i>
+                    <div class=h3>Web Design</div>
+                    <p class=pb-5>203 Fake St. Mountain View, San Francisco, California, USA</p>
                 </div>
+                <div class="d-flex flex-column text-start p-4 row-gap-3 col-lg bg-black text-light hovered"><i
+                        class="fa-solid fa-code fa-4x"></i>
+                    <div class="h3 text-light">Web Development</div>
+                    <p class=pb-5>A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="d-flex flex-column text-start p-4 row-gap-3 col-lg hovered"><i
+                        class="fa-solid fa-marker fa-4x"></i>
+                    <div class=h3>Graphic Design</div>
+                    <p class=pb-5 style=overflow-wrap:break-word>A small river named Duden flows by their place and
+                        supplies.A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="d-flex flex-column text-start p-4 bg-warning text-start p-2 row-gap-3 col-lg hovered"><i
+                        class="fa-solid fa-file fa-4x"></i>
+                    <div class=h3>Writing</div>
+                    <p class=pb-5>A small river named Duden flows by their place and supplies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=portfolio>
+        <div class=container-fluid>
+            <div class="justify-content-center pb-3">
+                <div class="text-center d-flex flex-column justify-content-around align-content-around container-fluid">
+                    <h2 class="portfolio-t align-self-start">Latest &amp;</h2>
+                    <h2 class="portfolio-t align-self-end" style=font-family:Poppins,sans-sefif>Greatest</h2>
+                </div>
+            </div>
+        </div>
+        <div class=container-fluid>
+            <div class=row>
+                <div class="col height-portfolio"></div>
+                <div class=col></div>
+            </div>
+            <div class=row>
+                <div class="col height-portfolio"></div>
+                <div class=col></div>
+            </div>
+            <div class=row>
+                <div class="col height-portfolio"></div>
+                <div class=col></div>
+            </div>
+            <div class=row>
+                <div class="col height-portfolio"></div>
+                <div class=col></div>
+            </div>
+            <div class=row>
+                <div class="col height-portfolio"></div>
+                <div class=col></div>
+            </div>
+            <div class=row>
+                <div class="col height-portfolio"></div>
+                <div class=col></div>
             </div>
         </div>
     </section>

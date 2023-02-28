@@ -9,15 +9,23 @@ module.exports = {
     jquery:'./src/jq.js',
     fontawesome:'./src/fontawesome.js'
   },
+  output:{
+    assetModuleFilename: 'img/[hash][ext][query]'
+  },
   module: {
     rules: [
       
       {
-        test: /\.html$/,
-        use: ["html-loader"]
+        test: /\.html$/i,
+        loader: "html-loader",
+        options: {
+          esModule: false
+        },
       },
-      
-
+      {
+        test: /\.jpg/,
+        type: 'asset/resource'
+      }
     ],
   },
   
