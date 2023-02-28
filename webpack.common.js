@@ -1,5 +1,4 @@
 const path = require('path')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
@@ -15,13 +14,7 @@ module.exports = {
   module: {
     rules: [
       
-      {
-        test: /\.html$/i,
-        loader: "html-loader",
-        options: {
-          esModule: false
-        },
-      },
+      
       {
         test: /\.jpg/,
         type: 'asset/resource'

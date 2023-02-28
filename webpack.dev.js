@@ -4,15 +4,25 @@ const {merge} = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
+let htmlPageNames = ['home', 'about'];
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HtmlWebpackPlugin({
+    template: `./src/pages/${name}.html`, // relative path to the HTML files
+    filename: `${name}.html`, // output HTML files
+    chunks: [`${name}`] // respective JS files
+  })
+});
+
 
 module.exports  =  merge(common,{
   mode: 'development',
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, 'src')
+    path: path.resolve(__dirname, 'pages')
   },
   devServer:{
-    static: path.resolve(__dirname, 'src'),
+    static: path.resolve(__dirname, 'pages'),
+
     port: 8080,
     open: true,
     hot: true,
@@ -54,7 +64,10 @@ module.exports  =  merge(common,{
       },
     ]
   },
-  plugins:[new HtmlWebpackPlugin({
-    template: './src/template.html',    
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/pages/home.html",
+      chunks: ['main']
+    })
+  ].concat(multipleHtmlPlugins)
 });

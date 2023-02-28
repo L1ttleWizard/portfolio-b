@@ -6,8 +6,14 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
-
+let htmlPageNames = ['home', 'about'];
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HtmlWebpackPlugin({
+    template: `./src/pages/${name}.html`, // relative path to the HTML files
+    filename: `${name}.html`, // output HTML files
+    chunks: [`${name}`] // respective JS files
+  })
+});
 
 
 module.exports = merge(common, {
@@ -64,17 +70,17 @@ module.exports = merge(common, {
     ],
   },
 
-  plugins: [new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }), new HtmlWebpackPlugin({
-    template: './src/template.html',
-    minify: {
-      removeComments:true,
-      removeAttributeQuotes:true,
-      collapseWhitespace:true,
-      removeEmptyAttributes:true
-    }
-
-  })]
-
-
-
+  plugins: [
+    new HtmlWebpackPlugin({
+        template: './src/pages/home.html',
+        filename: 'home.html'
+    }),
+    new HtmlWebpackPlugin({
+        template: './src/pages/about.html',
+        filename: 'about.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css"
+    }),
+  ]
 });
