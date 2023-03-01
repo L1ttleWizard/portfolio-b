@@ -4,7 +4,7 @@ name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -29,7 +29,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+          cache: 'npm'
+          cache-dependency-path: ./package-lock.json
       - run: npm ci
+      - run: npm install
       - run: npm run build
       - name: Checkout
         uses: actions/checkout@v3
@@ -38,7 +41,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./dist/home.html
+          source: ./dist
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
