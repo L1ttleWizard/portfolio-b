@@ -4,7 +4,7 @@ const {merge} = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
-let htmlPageNames = ['home', 'about'];
+let htmlPageNames = ['index', 'about'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/pages/${name}.html`, // relative path to the HTML files
@@ -66,7 +66,7 @@ module.exports  =  merge(common,{
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/pages/home.html",
+      template: "./src/pages/index.html",
     })
   ].concat(multipleHtmlPlugins)
 });

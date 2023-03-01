@@ -6,7 +6,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-let htmlPageNames = ['home', 'about'];
+let htmlPageNames = ['index', 'about'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/pages/${name}.html`, // relative path to the HTML files
@@ -72,12 +72,12 @@ module.exports = merge(common, {
 
   plugins: [
     new HtmlWebpackPlugin({
-        template: './src/pages/home.html',
-        filename: 'home.html'
+        template: './src/pages/index.html',
+        filename: 'index.[contenthash].html'
     }),
     new HtmlWebpackPlugin({
         template: './src/pages/about.html',
-        filename: 'about.html'
+        filename: 'about.[contenthash].html'
     }),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css"
