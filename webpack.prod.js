@@ -62,11 +62,21 @@ module.exports = merge(common, {
     ]
   },
   optimization: {
+    minimize:true,
     minimizer: [
       // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
 
       new CssMinimizerPlugin(),
-      new TerserPlugin()
+      new TerserPlugin({
+        test: /\.js(\?.*)?$/i, // you should add this property
+        terserOptions: {
+          compress: {
+            drop_console: true,
+            drop_debugger: true,
+            pure_funcs: ['console.log', 'console.info'], // Delete console
+          },
+        },
+      }),
     ],
   },
 
