@@ -67,7 +67,6 @@ module.exports  =  merge(common,{
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/pages/home.html",
-      chunks: ['main']
     })
   ].concat(multipleHtmlPlugins)
 });
