@@ -20,7 +20,7 @@ module.exports = merge(common, {
   mode: 'production',
 
   output: {
-    filename: "[name].[contenthash].bundle.js",
+    filename: "js/[contenthash].bundle.js",
     path: path.resolve(__dirname, 'dist'),
     clean: true
   },
@@ -83,14 +83,14 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebpackPlugin({
         template: './src/pages/index.html',
-        filename: 'index.html'
+        filename: 'pages/index.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/pages/about.html',
-        filename: 'about.html'
+        filename: 'pages/about.html'
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css"
+      filename: "css/[contenthash].css"
     }),
   ]
 });
