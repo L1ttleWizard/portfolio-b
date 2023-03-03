@@ -83,11 +83,11 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebpackPlugin({
         template: './src/pages/index.html',
-        filename: 'pages/index.html'
+        filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/pages/about.html',
-        filename: 'pages/about.html'
+        filename: 'about.html'
     }),
     new MiniCssExtractPlugin({
       filename: "css/[contenthash].css"
