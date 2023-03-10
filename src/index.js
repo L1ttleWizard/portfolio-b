@@ -1,10 +1,10 @@
 import './scss/styles.scss'
-import img from './img/work-1.jpg'
-import img2 from './img/work-2.jpg'
-import img3 from './img/work-3.jpg'
-import img4 from './img/work-4.jpg'
-import img5 from './img/work-5.jpg'
-import img6 from './img/work-6.jpg'
+import img from './img/work-1.png'
+import img2 from './img/work-2.png'
+import img3 from './img/work-3.png'
+import img4 from './img/work-4.png'
+import img5 from './img/work-5.png'
+import img6 from './img/work-6.png'
 var arr=[img,img2,img3,img4,img5,img6];
 console.log(arr)
 
@@ -54,7 +54,7 @@ window.addEventListener('scroll', function(event) { // To listen for event
 var portImg= document.querySelectorAll('.height-portfolio');
 for (var i = 0; i < portImg.length; i++) { 
     portImg[i].style.backgroundImage = 'url('+String( arr[i])+')';
-    portImg[i].style.backgroundSize = 'cover';
+    portImg[i].style.backgroundSize = 'contain';
     portImg[i].style.backgroundPosition = 'center';
     portImg[i].style.backgroundRepeat = 'no-repeat';
     

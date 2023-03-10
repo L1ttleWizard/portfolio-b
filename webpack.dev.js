@@ -9,7 +9,6 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/pages/${name}.html`, // relative path to the HTML files
     filename: `${name}.html`, // output HTML files
-    chunks: [`${name}`] // respective JS files
   })
 });
 
@@ -21,7 +20,7 @@ module.exports  =  merge(common,{
     path: path.resolve(__dirname, 'pages')
   },
   devServer:{
-    static: path.resolve(__dirname, 'pages'),
+    static: path.resolve(__dirname, 'src'),
 
     port: 8080,
     open: true,
